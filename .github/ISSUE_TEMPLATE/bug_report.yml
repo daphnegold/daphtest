@@ -1,7 +1,7 @@
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["bug"]
 assignees:
   - octocat
 body:
@@ -26,32 +26,37 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-  - type: dropdown
-    id: version
+  - type: textarea
+    id: steps-to-repro
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: Steps to reproduce the behavior
+      description: How can we verify the bug ourselves?
+      placeholder: Tell us what you see!
+      value: "Follow these steps!"
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: priority
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
+      label: Priority
+      description: Suggested bug priority
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - low (inconvenience)
+        - medium (please fix soon)
+        - high (this is breaking and/or blocking)
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
+  - type: textarea
+    id: screenshots-and-context
+    attributes:
+      label: Screenshots and additional context
+      description: Please upload any relevant screenshots. This field is markdown compatible.
   - type: checkboxes
     id: terms
     attributes:
