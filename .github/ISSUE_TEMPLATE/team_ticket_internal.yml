@@ -11,7 +11,6 @@ body:
       label: User story
       description: A clear and concise description from the perspective of the user.
       placeholder: Tell us about it from the user's perspective!
-      value: As a [...], I [...]
     validations:
       required: false
   - type: textarea
@@ -26,7 +25,7 @@ body:
     id: testing
     attributes:
       label: Describe the proposed testing strategy
-      description: A clear and concise description of what you testing is required.
+      description: A clear and concise description of what testing is required.
   - type: textarea
     id: screenshots-and-context
     attributes:
