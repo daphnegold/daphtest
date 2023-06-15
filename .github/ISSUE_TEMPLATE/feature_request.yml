@@ -35,12 +35,12 @@ body:
     id: alternatives
     attributes:
       label: Describe alternatives you've considered
-      description: A clear and concise description of any alternative solutions or features you've considered. This field is markdown compatible.
+      description: A clear and concise description of any alternative solutions or features you've considered.
   - type: textarea
     id: screenshots-and-context
     attributes:
       label: Screenshots and additional context
-      description: Please upload any relevant screenshots. This field is markdown compatible.
+      description: Please upload any relevant screenshots.
   # TODO: Uncomment after adding Code of Conduct
   # - type: checkboxes
   #   id: terms

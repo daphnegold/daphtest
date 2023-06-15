@@ -52,7 +52,7 @@ body:
     id: screenshots-and-context
     attributes:
       label: Screenshots and additional context
-      description: Please upload any relevant screenshots. This field is markdown compatible.
+      description: Please upload any relevant screenshots.
   # TODO: Uncomment after adding Code of Conduct
   # - type: checkboxes
   #   id: terms
